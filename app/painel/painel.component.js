@@ -13,6 +13,9 @@ var core_1 = require("@angular/core");
 var PainelComponent = (function () {
     function PainelComponent() {
     }
+    PainelComponent.prototype.constructora = function (elemento) {
+        this.elemento = elemento;
+    };
     PainelComponent.prototype.ngOnInit = function () {
         this.titulo = this.titulo.length > 7 ?
             this.titulo.substr(0, 7) + "..." :

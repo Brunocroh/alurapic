@@ -9,6 +9,7 @@ import { HttpModule } from "@angular/http";
 
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListagemComponent } from './listagem/listagem.component';
+import { BotaoModule } from './botao/botao.module';
 import { routing } from './app.routes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import 'rxjs/add/operator/map';
@@ -21,7 +22,8 @@ import 'rxjs/add/operator/map';
         HttpModule,
         routing,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        BotaoModule 
     ],
     declarations: [
         AppComponent,

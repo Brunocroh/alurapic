@@ -14,6 +14,7 @@ var painel_module_1 = require("./painel/painel.module");
 var http_1 = require("@angular/http");
 var cadastro_component_1 = require("./cadastro/cadastro.component");
 var listagem_component_1 = require("./listagem/listagem.component");
+var botao_module_1 = require("./botao/botao.module");
 var app_routes_1 = require("./app.routes");
 var forms_1 = require("@angular/forms");
 require("rxjs/add/operator/map");
@@ -29,7 +30,8 @@ var AppModule = (function () {
                 http_1.HttpModule,
                 app_routes_1.routing,
                 forms_1.FormsModule,
-                forms_1.ReactiveFormsModule
+                forms_1.ReactiveFormsModule,
+                botao_module_1.BotaoModule
             ],
             declarations: [
                 app_component_1.AppComponent,

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation} from "@angular/core";
+import { Component, Input, OnInit, ViewEncapsulation, ElementRef} from "@angular/core";
 
 @Component({
     moduleId: module.id,
@@ -10,6 +10,12 @@ import { Component, Input, OnInit, ViewEncapsulation} from "@angular/core";
 export class PainelComponent implements OnInit{
 
     @Input() titulo: String;
+    elemento: ElementRef;
+
+    constructora(elemento: ElementRef){
+
+        this.elemento = elemento;
+    }
 
     ngOnInit(){
         this.titulo = this.titulo.length > 7 ?
